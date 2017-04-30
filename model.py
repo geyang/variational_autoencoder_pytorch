@@ -9,10 +9,13 @@ class Decoder(nn.Module):
         self.fc1 = nn.Linear(hidden_n_1, hidden_n_2)
         self.fc2 = nn.Linear(hidden_n_2, 784)
 
+        self.relu = nn.ReLU()
+        self.sigmoid = nn.Sigmoid()
+
     def forward(self, mu):
         # todo: should take variance also into account?
-        h1 = self.fc1(mu)
-        return self.fc2(h1)
+        h1 = self.relu(self.fc1(mu))
+        return self.sigmoid(self.fc2(h1))
 
 
 class Encoder(nn.Module):
@@ -27,18 +30,22 @@ class Encoder(nn.Module):
         return self.fc_mu(h1), self.fc_var(h1)
 
 
+from visdom_helper.visdom_helper import Dashboard
+
+
 class VAELoss(nn.Module):
     def __init__(self):
         super(VAELoss, self).__init__()
         self.bce_loss = nn.BCELoss()
         self.bce_loss.size_average = False
+        self.dashboard = Dashboard('Variational-Autoencoder-experiment')
 
     # question: how is the loss function using the mu and variance?
     def forward(self, x, mu, log_var, recon_x):
-        # assert x.size()[1:] == [784,]
+        """gives the batch normalized Variational Error."""
+
+        batch_size = x.size()[0]
         BCE = self.bce_loss(recon_x, x)
-        print(recon_x, x, BCE)
-        raise KeyError('stop right here')
 
         # see Appendix B from VAE paper:
         # Kingma and Welling. Auto-Encoding Variational Bayes. ICLR, 2014
@@ -47,7 +54,7 @@ class VAELoss(nn.Module):
         KLD_element = mu.pow(2).add_(log_var.exp()).mul_(-1).add_(1).add_(log_var)
         KLD = torch.sum(KLD_element).mul_(-0.5)
 
-        return BCE + KLD
+        return (BCE + KLD) / batch_size
 
 
 class VariationalAutoEncoder(nn.Module):
