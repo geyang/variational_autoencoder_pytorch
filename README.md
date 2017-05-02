@@ -8,8 +8,9 @@ This is implemented using the pyTorch tutorial example as a reference.
 - [x] data (use torchvision dataloader)
 - [x] model (reference pytorch tutorial)
 - [x] train 
-- [ ] explain reparametrization
-- [ ] explain variational loss
+- [x] chore: add Makefile.
+- [x] explain reparametrization
+- [x] explain variational loss
 - [ ] think of a demo: how do you visualize the output of a variational autoencoder? A python demo?
 
 ## Usage (To Run)
@@ -25,6 +26,9 @@ This is implemented using the pyTorch tutorial example as a reference.
     ```bash
     python vae_mnist.py
     ```
+
+Or for with a quick shortcut, you can just run `make`. You can take a look at
+the [`./Makefile`](./Makefile) for more details.
     
 ## Variational Autoencoder (VAE)
 
