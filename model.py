@@ -64,10 +64,10 @@ class VariationalAutoEncoder(nn.Module):
 
     def forward(self, x):
         mu, log_var = self.encoder(x.view(-1, 784))
-        z = self.reparametrize(mu, log_var)
+        z = self.reparameterize(mu, log_var)
         return self.decoder(z), mu, log_var
 
-    def reparametrize(self, mu, log_var):
+    def reparameterize(self, mu, log_var):
         """you generate a random distribution w.r.t. the mu and log_var from the embedding space."""
         vector_size = log_var.size()
         eps = Variable(torch.FloatTensor(vector_size).normal_())
