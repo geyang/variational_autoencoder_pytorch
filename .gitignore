@@ -5,3 +5,6 @@ __pychache__
 
 # log files
 *.log
+
+# data files
+data
