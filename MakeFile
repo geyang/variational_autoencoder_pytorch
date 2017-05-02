@@ -1,0 +1,10 @@
+author=$(Ge Yang)
+author_email=$(yangge1987@gmail.com)
+
+default:
+	make train
+train:
+	python -m visdom.server & open http://localhost:8097/env/Variational-Autoencoder-experiment
+	python vae_mnist.py
+evaluate:
+	python vae_mnist.py
