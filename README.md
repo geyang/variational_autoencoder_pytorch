@@ -30,14 +30,15 @@ This is implemented using the pyTorch tutorial example as a reference.
 Or for with a quick shortcut, you can just run `make`. You can take a look at
 the [`./Makefile`](./Makefile) for more details.
     
-## Variational Autoencoder (VAE)
+## Variational Autoencoder (VAE) and Variational Bayesian methods
 
 Going through the code is almost the best way to explain the Variational
 Autoencoder. However, to fully understand Variational Bayesian methods and why
 it is useful, it is best to first take a look at graphical models plus getting 
-a good understanding of various inference methods. For the former, I recommend 
-Daphne Koller's [Probabilistic Graphical Models course from stanford](https://www.youtube.com/playlist?list=PL50E6E80E8525B59C). 
-For the latter, you can take a look at wikipedia or Kevin Murphy's textbook.
+a good understanding of various Bayesian inference methods. For the former, I 
+recommend Daphne Koller's [Probabilistic Graphical Models course](https://www.youtube.com/playlist?list=PL50E6E80E8525B59C)
+from stanford. For the latter, you can take a look at wikipedia or Kevin 
+Murphy's textbook.
 
 ### Theory Requirements
 - Graphical Models
