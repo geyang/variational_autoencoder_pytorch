@@ -8,7 +8,9 @@ default:
 install:
 	pip install -r requirement.txt
 setup-vis-server:
-	python -m visdom.server & open http://localhost:8097/env/Variational-Autoencoder-experiment
+	python -m visdom.server > visdom.log 2>&1 &
+	sleep 0.5s
+	open http://localhost:8097/env/Variational-Autoencoder-experiment
 train:
 	python vae_mnist.py
 evaluate:
