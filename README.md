@@ -28,7 +28,7 @@ This is implemented using the pyTorch tutorial example as a reference.
     ```
 
 Or for with a quick shortcut, you can just run `make`. You can take a look at
-the [`./Makefile`](./Makefile) for more details.
+the [`./Makefile`](Makefile) for more details.
     
 ## Variational Autoencoder (VAE)
 
