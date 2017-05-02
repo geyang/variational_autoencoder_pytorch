@@ -9,7 +9,7 @@ This is implemented using the pyTorch tutorial example as a reference.
 - [x] model (reference pytorch tutorial)
 - [x] train 
 - [x] chore: add Makefile.
-- [x] explain reparameterization
+- [x] explain reparametrization
 - [x] explain variational loss
 - [ ] think of a demo: how do you visualize the output of a variational autoencoder? A python demo?
 
@@ -28,24 +28,41 @@ This is implemented using the pyTorch tutorial example as a reference.
     ```
 
 Or for with a quick shortcut, you can just run `make`. You can take a look at
-the [`./Makefile`](Makefile) for more details.
+the [`./Makefile`](./Makefile) for more details.
     
 ## Variational Autoencoder (VAE)
 
 Going through the code is almost the best way to explain the Variational
-Autoencoder. VAE has four parts:
+Autoencoder. However, to fully understand Variational Bayesian methods and why
+it is useful, it is best to first take a look at graphical models plus getting 
+a good understanding of various inference methods. For the former, I recommend 
+Daphne Koller's [Probabilistic Graphical Models course from stanford](https://www.youtube.com/playlist?list=PL50E6E80E8525B59C). 
+For the latter, you can take a look at wikipedia or Kevin Murphy's textbook.
+
+### Theory Requirements
+- Graphical Models
+- Maximum Likelihood Estimate and Maximum A Posteriori inference
+- Kullback-Leibler divergence
+
+After getting familiar with these concepts, the paper would make a lot more 
+sense. 
+- arxiv link: https://arxiv.org/abs/1312.6114
+
+### Understanding VAE by reading code
+
+VAE has four parts:
+
 1. Encoder
 2. Decoder
 3. Reparametrization in-between
 4. The variational loss function
 
 The encoder and the decoder doesn't require much explaination. I will show the
-code quickly and spend more time with the reparameterization step and the 
+code quickly and spend more time with the reparametrization step and the 
 variational loss function. 
 
-For motivations, you can take a look at the original paper: https://arxiv.org/abs/1312.6114
 
-### Encoder
+#### Encoder
 
 The code looks like this: It is a very simple two-layer fully-connected
 network with no linearities.
@@ -63,7 +80,7 @@ class Encoder(nn.Module):
         return self.fc_mu(h1), self.fc_var(h1)
 ```
 
-### Decoder
+#### Decoder
 
 The decoder has non-linearity for both `h1` and `output` layer. The 
 sigmoid forces the output to be between 0 and 1. Otherwise the 
@@ -84,7 +101,7 @@ class Decoder(nn.Module):
         return self.sigmoid(self.fc2(h1))
 ```
 
-### Reparametrization
+#### Reparametrization
 
 Here you want to take the *mean* and *variance* from the encoder, and randomly 
 generate an embedded vector according to those parameters. 
@@ -124,7 +141,7 @@ class VariationalAutoEncoder(nn.Module):
         return eps.mul(std).add_(mu)
 ```
 
-### Variational Loss Function
+#### Variational Loss Function
 
 The loss function has two parts:
 ```python
