@@ -9,7 +9,7 @@ This is implemented using the pyTorch tutorial example as a reference.
 - [x] model (reference pytorch tutorial)
 - [x] train 
 - [x] chore: add Makefile.
-- [x] explain reparametrization
+- [x] explain reparameterization
 - [x] explain variational loss
 - [ ] think of a demo: how do you visualize the output of a variational autoencoder? A python demo?
 
@@ -40,7 +40,7 @@ Autoencoder. VAE has four parts:
 4. The variational loss function
 
 The encoder and the decoder doesn't require much explaination. I will show the
-code quickly and spend more time with the reparametrization step and the 
+code quickly and spend more time with the reparameterization step and the 
 variational loss function. 
 
 For motivations, you can take a look at the original paper: https://arxiv.org/abs/1312.6114
