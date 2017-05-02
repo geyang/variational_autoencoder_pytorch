@@ -3,6 +3,12 @@
 This is implemented using the pyTorch tutorial example as a reference.
 
 ### Todo
+- [ ] think of a demo: how do you visualize the output of a variational 
+autoencoder? A python demo?
+- [ ] closer look at the paper
+- [ ] theory blog post to explain variational bayesian methods.
+
+#### Done
 - [x] doc: add `requirement.txt`
 - [x] reading: read [Graphical Model]()
 - [x] data (use torchvision dataloader)
@@ -11,7 +17,6 @@ This is implemented using the pyTorch tutorial example as a reference.
 - [x] chore: add Makefile.
 - [x] explain reparameterization
 - [x] explain variational loss
-- [ ] think of a demo: how do you visualize the output of a variational autoencoder? A python demo?
 
 ## Usage (To Run)
 1. install dependencies via
