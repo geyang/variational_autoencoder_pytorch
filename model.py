@@ -9,12 +9,11 @@ class Decoder(nn.Module):
         self.fc1 = nn.Linear(hidden_n_1, hidden_n_2)
         self.fc2 = nn.Linear(hidden_n_2, 784)
 
-        self.relu = nn.ReLU()
-        self.sigmoid = nn.Sigmoid()
+        self.reLU = nn.ReLU()  # reLU non-linear unit for the hidden output
+        self.sigmoid = nn.Sigmoid()  # sigmoid non-linear unit for the output
 
-    def forward(self, mu):
-        # todo: should take variance also into account?
-        h1 = self.relu(self.fc1(mu))
+    def forward(self, embedded):
+        h1 = self.reLU(self.fc1(embedded))
         return self.sigmoid(self.fc2(h1))
 
 
@@ -68,8 +67,9 @@ class VariationalAutoEncoder(nn.Module):
         z = self.reparametrize(mu, log_var)
         return self.decoder(z), mu, log_var
 
-    # question: what does this reparametrization step do?
     def reparametrize(self, mu, log_var):
+        """you generate a random distribution w.r.t. the mu and log_var from the embedding space."""
+        vector_size = log_var.size()
+        eps = Variable(torch.FloatTensor(vector_size).normal_())
         std = log_var.mul(0.5).exp_()
-        eps = Variable(torch.FloatTensor(std.size()).normal_())
         return eps.mul(std).add_(mu)
