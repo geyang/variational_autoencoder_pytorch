@@ -33,7 +33,7 @@ autoencoder? A python demo?
     ```
 
 Or for with a quick shortcut, you can just run `make`. You can take a look at
-the [`./Makefile`](./Makefile) for more details.
+the [`./Makefile`](Makefile) for more details.
     
 ## Variational Autoencoder (VAE) and Variational Bayesian methods
 

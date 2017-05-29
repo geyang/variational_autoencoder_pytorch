@@ -68,7 +68,13 @@ class VariationalAutoEncoder(nn.Module):
         return self.decoder(z), mu, log_var
 
     def reparameterize(self, mu, log_var):
-        """you generate a random distribution w.r.t. the mu and log_var from the embedding space."""
+        """you generate a random distribution w.r.t. the mu and log_var from the embedding space.
+        In order for the back-propagation to work, we need to be able to calculate the gradient. 
+        This reparameterization trick first generates a normal distribution, then shapes the distribution
+        with the mu and variance from the encoder.
+        
+        This way, we can can calculate the gradient parameterized by this particular random instance.
+        """
         vector_size = log_var.size()
         eps = Variable(torch.FloatTensor(vector_size).normal_())
         std = log_var.mul(0.5).exp_()
