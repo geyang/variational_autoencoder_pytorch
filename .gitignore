@@ -4,7 +4,7 @@ __pychache__
 
 
 # log files
-*.log
+visdom.log
 
 # data files
 data
