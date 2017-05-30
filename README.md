@@ -255,4 +255,5 @@ def forward(self, x, mu, log_var, recon_x):
     
 ## Demo
 
-we can generate MNIST like numbers by sampling from the embedding layer.
+we can generate MNIST like numbers by sampling from the embedding layer. Take a look at this ipython notebook: 
+[Variationa Auto-Encoder Demo.ipynb](./Variational%20Auto-Encoder%20Demo.ipynb)
