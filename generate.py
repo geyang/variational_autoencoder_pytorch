@@ -9,7 +9,7 @@ mpl.use('Agg')
 import matplotlib.pyplot as plt
 from vae_mnist import Session
 
-parser = argparse.ArgumentParser(description='variational autoencoder training')
+parser = argparse.ArgumentParser(description='variational autoencoder generate examples')
 
 parser.add_argument('--prefix', type=str, default='VAE', help='the prefix of this session')
 parser.add_argument('--checkpoint-path', type=str, default='./checkpoints/{prefix}-{date}-{time}.pkl',

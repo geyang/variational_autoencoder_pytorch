@@ -37,6 +37,11 @@ the [`./Makefile`](Makefile) for more details.
 
 ### Using as a command line tool
 
+There are two scripts: 
+- `train.py` *and*
+- `generate.py`
+
+#### `train.py`
 ```bash
 usage: main.py [-h] [--prefix PREFIX] [--dashboard-server DASHBOARD_SERVER]
                [--dataset DATASET] [--checkpoint-path CHECKPOINT_PATH]
@@ -68,7 +73,38 @@ optional arguments:
   --learning-rate LEARNING_RATE
                         learning rate during training
 ```
+
+#### `generate.py`
+
+```bash
+usage: generate.py [-h] [--prefix PREFIX] [--checkpoint-path CHECKPOINT_PATH]
+                   [--row ROW] [--col COL] [--output OUTPUT]
+                   [--latent-n LATENT_N]
+
+variational autoencoder generate examples
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --prefix PREFIX       the prefix of this session
+  --checkpoint-path CHECKPOINT_PATH
+                        path for the checkpoint file
+  --row ROW             columns in the output
+  --col COL             rows in the output
+  --output OUTPUT
+  --latent-n LATENT_N   latent size of the encoder
+```
+
+### Experimentation
+
+For experimentation, refer to `./experiment-archive/explore_latent_n.sh`
     
+    
+## Results:
+
+random digits generated with a 20-dimensional embedding:
+
+![latent-20](./figures/VAE-20170529-20.png)
+
 ## Variational Autoencoder (VAE) and Variational Bayesian methods
 
 Going through the code is almost the best way to explain the Variational
