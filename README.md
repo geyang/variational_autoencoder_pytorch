@@ -179,8 +179,15 @@ class Decoder(nn.Module):
 
 #### Reparameterization
 
-Here you want to take the *mean* and *variance* from the encoder, and randomly 
-generate an embedded vector according to those parameters. 
+Stochastic nodes where the output is drawn from bernoulli and categorical distributions are not differentiable. This 
+reparametrization trick is born exactly to solve this problem. The following trick takes the random drawing off the 
+main branch of the computation graph, and places it inside a normally distributed random variable. Drawing the following
+graph on paper will help you understand it better.
+
+1. first you take the *mean* and *variance* from the encoder
+2. draw a random vector from a normal distribution
+3. use this random vector as the entropy source, to generate a backward differentiable embedded vector that has the
+given *mean* and *variance*.
 
 In pyTorch this would be:
 
