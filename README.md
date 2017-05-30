@@ -34,6 +34,40 @@ autoencoder? A python demo?
 
 Or for with a quick shortcut, you can just run `make`. You can take a look at
 the [`./Makefile`](Makefile) for more details.
+
+### Using as a command line tool
+
+```bash
+usage: main.py [-h] [--prefix PREFIX] [--dashboard-server DASHBOARD_SERVER]
+               [--dataset DATASET] [--checkpoint-path CHECKPOINT_PATH]
+               [-L LOAD] [-S SAVE] [--batch-size BATCH_SIZE]
+               [--test-batch-size TEST_BATCH_SIZE] [--epochs EPOCHS]
+               [--start START] [--latent-n LATENT_N]
+               [--learning-rate LEARNING_RATE]
+
+variational autoencoder training
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --prefix PREFIX       the prefix of this session
+  --dashboard-server DASHBOARD_SERVER
+                        batch size for test
+  --dataset DATASET, -d DATASET
+                        torchvision dataset key: choose from [mnist, ...]
+  --checkpoint-path CHECKPOINT_PATH
+                        path for the checkpoint file
+  -L LOAD, --load LOAD  load model at the beginning
+  -S SAVE, --save SAVE  save model on exit
+  --batch-size BATCH_SIZE
+                        batch size for training and test
+  --test-batch-size TEST_BATCH_SIZE
+                        batch size for test
+  --epochs EPOCHS       batch size for test
+  --start START         batch size for test
+  --latent-n LATENT_N   latent size of the encoder
+  --learning-rate LEARNING_RATE
+                        learning rate during training
+```
     
 ## Variational Autoencoder (VAE) and Variational Bayesian methods
 

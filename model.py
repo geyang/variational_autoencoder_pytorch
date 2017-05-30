@@ -57,10 +57,10 @@ class VAELoss(nn.Module):
 
 
 class VariationalAutoEncoder(nn.Module):
-    def __init__(self):
+    def __init__(self, latent_n=10):
         super(VariationalAutoEncoder, self).__init__()
-        self.encoder = Encoder()
-        self.decoder = Decoder()
+        self.encoder = Encoder(hidden_n_2=latent_n)
+        self.decoder = Decoder(hidden_n_1=latent_n)
 
     def forward(self, x):
         mu, log_var = self.encoder(x.view(-1, 784))

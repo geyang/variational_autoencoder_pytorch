@@ -1,6 +1,7 @@
 .idea
 __pychache__
 **/*.pyc
+.ipynb_checkpoints
 
 
 # log files
@@ -8,3 +9,4 @@ visdom.log
 
 # data files
 data
+.pkl

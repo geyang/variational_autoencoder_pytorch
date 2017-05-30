@@ -1,9 +1,8 @@
 from visdom import Visdom
 
 class Dashboard(Visdom):
-    def __init__(self, name):
-        super(Dashboard, self).__init__()
-        self.env = name
+    def __init__(self, env, **kwargs):
+        super(Dashboard, self).__init__(env=env, **kwargs)
         self.plots = {}
         self.plot_data = {}
 
