@@ -3,12 +3,12 @@
 This is implemented using the pyTorch tutorial example as a reference.
 
 ### Todo
-- [ ] think of a demo: how do you visualize the output of a variational 
-autoencoder? A python demo?
-- [ ] closer look at the paper
 - [ ] theory blog post to explain variational bayesian methods.
+- [ ] relate the reparametrization trick to Gumbel-softmax reparametrization trick.
 
 #### Done
+- [x] closer look at the paper
+- [x] think of a demo: how do you visualize the output of a variational 
 - [x] doc: add `requirement.txt`
 - [x] reading: read [Graphical Model]()
 - [x] data (use torchvision dataloader)
