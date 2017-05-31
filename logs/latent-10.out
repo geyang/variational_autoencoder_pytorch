@@ -1,0 +1,391 @@
+latent_n is: 10
+batch loss is: 4.295
+batch loss is: 1.729
+batch loss is: 1.46
+batch loss is: 1.338
+batch loss is: 1.266
+epoch 0 complete
+====> Test set loss: 1.0266
+batch loss is: 1.027
+batch loss is: 1.014
+batch loss is: 1.009
+batch loss is: 1.003
+batch loss is: 0.9989
+epoch 1 complete
+====> Test set loss: 0.9836
+batch loss is: 1.005
+batch loss is: 0.979
+batch loss is: 0.9758
+batch loss is: 0.9757
+batch loss is: 0.9731
+epoch 2 complete
+====> Test set loss: 0.9653
+batch loss is: 0.9513
+batch loss is: 0.9636
+batch loss is: 0.9635
+batch loss is: 0.9625
+batch loss is: 0.9607
+epoch 3 complete
+====> Test set loss: 0.9543
+batch loss is: 1.003
+batch loss is: 0.9515
+batch loss is: 0.9539
+batch loss is: 0.9525
+batch loss is: 0.9519
+epoch 4 complete
+====> Test set loss: 0.9514
+batch loss is: 0.9447
+batch loss is: 0.9423
+batch loss is: 0.9454
+batch loss is: 0.9453
+batch loss is: 0.9448
+epoch 5 complete
+====> Test set loss: 0.9453
+batch loss is: 0.9523
+batch loss is: 0.9417
+batch loss is: 0.9394
+batch loss is: 0.9402
+batch loss is: 0.9403
+epoch 6 complete
+====> Test set loss: 0.9404
+batch loss is: 0.9288
+batch loss is: 0.937
+batch loss is: 0.933
+batch loss is: 0.9322
+batch loss is: 0.933
+epoch 7 complete
+====> Test set loss: 0.9366
+batch loss is: 0.9087
+saving state_dict to ./checkpoints/Variational_Autoencoder-20170529-10
+latent_n is: 10
+batch loss is: 4.299
+batch loss is: 1.722
+batch loss is: 1.453
+batch loss is: 1.335
+batch loss is: 1.267
+epoch 0 complete
+====> Test set loss: 1.0298
+batch loss is: 1.008
+batch loss is: 1.023
+batch loss is: 1.016
+batch loss is: 1.012
+batch loss is: 1.008
+epoch 1 complete
+====> Test set loss: 0.9899
+batch loss is: 1.02
+batch loss is: 0.9808
+batch loss is: 0.9827
+batch loss is: 0.9801
+batch loss is: 0.9788
+epoch 2 complete
+====> Test set loss: 0.9715
+batch loss is: 0.9689
+batch loss is: 0.9645
+batch loss is: 0.9661
+batch loss is: 0.9644
+batch loss is: 0.9643
+epoch 3 complete
+====> Test set loss: 0.9618
+batch loss is: 0.9767
+batch loss is: 0.9591
+batch loss is: 0.9586
+batch loss is: 0.9571
+batch loss is: 0.9558
+epoch 4 complete
+====> Test set loss: 0.9538
+batch loss is: 0.9397
+batch loss is: 0.9495
+batch loss is: 0.9521
+batch loss is: 0.9501
+batch loss is: 0.9492
+epoch 5 complete
+====> Test set loss: 0.9463
+batch loss is: 0.9234
+batch loss is: 0.9453
+batch loss is: 0.9449
+batch loss is: 0.9438
+batch loss is: 0.9425
+epoch 6 complete
+====> Test set loss: 0.9421
+batch loss is: 0.9348
+batch loss is: 0.9346
+batch loss is: 0.9361
+batch loss is: 0.9365
+batch loss is: 0.937
+epoch 7 complete
+====> Test set loss: 0.9369
+batch loss is: 0.9149
+batch loss is: 0.9288
+batch loss is: 0.9302
+batch loss is: 0.9315
+batch loss is: 0.9319
+epoch 8 complete
+====> Test set loss: 0.9322
+batch loss is: 0.9197
+batch loss is: 0.924
+batch loss is: 0.9279
+batch loss is: 0.9279
+batch loss is: 0.9277
+epoch 9 complete
+====> Test set loss: 0.9309
+batch loss is: 0.9478
+batch loss is: 0.9255
+batch loss is: 0.9254
+batch loss is: 0.9252
+batch loss is: 0.9242
+epoch 10 complete
+====> Test set loss: 0.9266
+batch loss is: 0.9099
+saving state_dict to ./checkpoints/Variational_Autoencoder-20170529-10
+latent_n is: 10
+batch loss is: 4.277
+batch loss is: 1.721
+batch loss is: 1.452
+batch loss is: 1.332
+batch loss is: 1.263
+epoch 0 complete
+====> Test set loss: 1.0293
+batch loss is: 1.014
+batch loss is: 1.021
+batch loss is: 1.014
+batch loss is: 1.008
+batch loss is: 1.004
+epoch 1 complete
+====> Test set loss: 0.9867
+batch loss is: 0.9761
+batch loss is: 0.9803
+batch loss is: 0.9794
+batch loss is: 0.978
+batch loss is: 0.9763
+epoch 2 complete
+====> Test set loss: 0.9701
+batch loss is: 0.9949
+batch loss is: 0.9595
+batch loss is: 0.9617
+batch loss is: 0.9636
+batch loss is: 0.9632
+epoch 3 complete
+====> Test set loss: 0.9598
+batch loss is: 0.9224
+batch loss is: 0.9562
+batch loss is: 0.9528
+batch loss is: 0.953
+batch loss is: 0.9535
+epoch 4 complete
+====> Test set loss: 0.9523
+batch loss is: 0.9317
+batch loss is: 0.9447
+batch loss is: 0.9444
+batch loss is: 0.9455
+batch loss is: 0.9463
+epoch 5 complete
+====> Test set loss: 0.9472
+batch loss is: 0.9613
+batch loss is: 0.9417
+batch loss is: 0.9412
+batch loss is: 0.9411
+batch loss is: 0.9399
+epoch 6 complete
+====> Test set loss: 0.9417
+batch loss is: 0.9514
+batch loss is: 0.9376
+batch loss is: 0.9384
+batch loss is: 0.9368
+batch loss is: 0.9359
+epoch 7 complete
+====> Test set loss: 0.9375
+batch loss is: 0.942
+batch loss is: 0.9335
+batch loss is: 0.9312
+batch loss is: 0.9315
+batch loss is: 0.9306
+epoch 8 complete
+====> Test set loss: 0.9330
+batch loss is: 0.9282
+batch loss is: 0.9249
+batch loss is: 0.9261
+batch loss is: 0.9259
+batch loss is: 0.926
+epoch 9 complete
+====> Test set loss: 0.9275
+batch loss is: 0.9642
+batch loss is: 0.9239
+batch loss is: 0.9237
+batch loss is: 0.9226
+batch loss is: 0.9225
+epoch 10 complete
+====> Test set loss: 0.9248
+batch loss is: 0.9281
+batch loss is: 0.9199
+batch loss is: 0.9216
+batch loss is: 0.92
+batch loss is: 0.9195
+epoch 11 complete
+====> Test set loss: 0.9226
+batch loss is: 0.9061
+batch loss is: 0.9163
+batch loss is: 0.9145
+batch loss is: 0.9146
+batch loss is: 0.9163
+epoch 12 complete
+====> Test set loss: 0.9219
+batch loss is: 0.8991
+batch loss is: 0.9122
+batch loss is: 0.9112
+batch loss is: 0.9115
+batch loss is: 0.9125
+epoch 13 complete
+====> Test set loss: 0.9185
+batch loss is: 0.9194
+batch loss is: 0.909
+batch loss is: 0.9097
+batch loss is: 0.9111
+batch loss is: 0.9112
+epoch 14 complete
+====> Test set loss: 0.9166
+batch loss is: 0.9285
+batch loss is: 0.9055
+batch loss is: 0.9091
+saving state_dict to ./checkpoints/VAE-20170529-10
+latent_n is: 10
+batch loss is: 4.293
+batch loss is: 1.706
+batch loss is: 1.444
+batch loss is: 1.327
+batch loss is: 1.258
+epoch 0 complete
+====> Test set loss: 1.0277
+batch loss is: 0.9993
+batch loss is: 1.018
+batch loss is: 1.012
+batch loss is: 1.005
+batch loss is: 1.003
+epoch 1 complete
+====> Test set loss: 0.9875
+batch loss is: 0.9657
+batch loss is: 0.9806
+batch loss is: 0.9782
+batch loss is: 0.976
+batch loss is: 0.9748
+epoch 2 complete
+====> Test set loss: 0.9706
+batch loss is: 0.9817
+batch loss is: 0.9655
+batch loss is: 0.9638
+batch loss is: 0.9638
+batch loss is: 0.9624
+epoch 3 complete
+====> Test set loss: 0.9600
+batch loss is: 0.9385
+batch loss is: 0.9543
+batch loss is: 0.9552
+batch loss is: 0.9551
+batch loss is: 0.9543
+epoch 4 complete
+====> Test set loss: 0.9549
+batch loss is: 0.9646
+batch loss is: 0.9529
+batch loss is: 0.9524
+batch loss is: 0.95
+batch loss is: 0.9477
+epoch 5 complete
+====> Test set loss: 0.9489
+batch loss is: 0.9409
+batch loss is: 0.9456
+batch loss is: 0.9435
+batch loss is: 0.9432
+batch loss is: 0.9433
+epoch 6 complete
+====> Test set loss: 0.9470
+batch loss is: 0.902
+batch loss is: 0.9437
+batch loss is: 0.9408
+batch loss is: 0.9382
+batch loss is: 0.938
+epoch 7 complete
+====> Test set loss: 0.9403
+batch loss is: 0.9356
+batch loss is: 0.9334
+batch loss is: 0.9326
+batch loss is: 0.9328
+batch loss is: 0.9328
+epoch 8 complete
+====> Test set loss: 0.9354
+batch loss is: 0.9065
+batch loss is: 0.9319
+batch loss is: 0.931
+batch loss is: 0.9313
+batch loss is: 0.9298
+epoch 9 complete
+====> Test set loss: 0.9328
+batch loss is: 0.9117
+batch loss is: 0.9237
+batch loss is: 0.9255
+batch loss is: 0.9253
+batch loss is: 0.9254
+epoch 10 complete
+====> Test set loss: 0.9308
+batch loss is: 0.9317
+batch loss is: 0.9229
+batch loss is: 0.9208
+batch loss is: 0.9219
+batch loss is: 0.9223
+epoch 11 complete
+====> Test set loss: 0.9267
+batch loss is: 0.9177
+batch loss is: 0.9222
+batch loss is: 0.9217
+batch loss is: 0.9201
+batch loss is: 0.9193
+epoch 12 complete
+====> Test set loss: 0.9256
+batch loss is: 0.9105
+batch loss is: 0.9209
+batch loss is: 0.9189
+batch loss is: 0.9173
+batch loss is: 0.9171
+epoch 13 complete
+====> Test set loss: 0.9211
+batch loss is: 0.8753
+batch loss is: 0.9123
+batch loss is: 0.9131
+batch loss is: 0.914
+batch loss is: 0.9138
+epoch 14 complete
+====> Test set loss: 0.9185
+batch loss is: 0.8892
+batch loss is: 0.91
+batch loss is: 0.9109
+batch loss is: 0.9125
+batch loss is: 0.9116
+epoch 15 complete
+====> Test set loss: 0.9174
+batch loss is: 0.9522
+batch loss is: 0.909
+batch loss is: 0.9094
+batch loss is: 0.9098
+batch loss is: 0.9103
+epoch 16 complete
+====> Test set loss: 0.9153
+batch loss is: 0.8975
+batch loss is: 0.9046
+batch loss is: 0.907
+batch loss is: 0.9081
+batch loss is: 0.9087
+epoch 17 complete
+====> Test set loss: 0.9166
+batch loss is: 0.8928
+batch loss is: 0.9057
+batch loss is: 0.9039
+batch loss is: 0.9061
+batch loss is: 0.9063
+epoch 18 complete
+====> Test set loss: 0.9111
+batch loss is: 0.8638
+batch loss is: 0.9017
+batch loss is: 0.9048
+batch loss is: 0.905
+batch loss is: 0.9049
+epoch 19 complete
+====> Test set loss: 0.9113
+saving state_dict to ./checkpoints/VAE-20170529-10

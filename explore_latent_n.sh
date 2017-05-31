@@ -1,10 +1,54 @@
 #!/usr/bin/env bash
 
-#python -u train.py --latent-n=20 --save=True --checkpoint-path="./checkpoints/{prefix}-{date}-20" --dashboard-server="http://localhost:8097" >> ./logs/latent-20.out
-python -u generate.py --latent-n=20 --checkpoint-path="./checkpoints/{prefix}-{date}-20.pkl" --output="./figures/{prefix}-{date}-20.png"
+experiment () {
+LATENT_N="$1"
+echo "laten variable is: $1"
+TIME=$(date +%H%M%S)
+CHECKPOINT_PATH="./checkpoints/{prefix}-{date}-$TIME-$LATENT_N.pkl"
+echo $CHECKPOINT_PATH
+python -u train.py --latent-n=$LATENT_N --save=True --checkpoint-path=$CHECKPOINT_PATH --dashboard-server="http://localhost:8097" >> ./logs/latent-$LATENT_N.out
+python -u generate.py --latent-n=$LATENT_N --checkpoint-path=$CHECKPOINT_PATH --output="./figures/{prefix}-{date}-$LATENT_N.png"
+}
 
-python -u train.py --latent-n=10 --save=True --checkpoint-path="./checkpoints/{prefix}-{date}-10" --dashboard-server="http://localhost:8097" >> ./logs/latent-10.out
-python -u generate.py --latent-n=10 --checkpoint-path="./checkpoints/{prefix}-{date}-10.pkl" --output="./figures/{prefix}-{date}-10.png"
 
-python train.py --latent-n=2 --save=True --checkpoint-path="./checkpoints/{prefix}-{date}-2" --dashboard-server="http://localhost:8097" >> ./logs/latent-2.out
-python generate.py --latent-n=2 --checkpoint-path="./checkpoints/{prefix}-{date}-2.pkl" --output="./figures/{prefix}-{date}-2.png"
+
+experiment 40
+experiment 40
+experiment 40
+experiment 40
+experiment 40
+experiment 30
+experiment 30
+experiment 30
+experiment 30
+experiment 30
+experiment 20
+experiment 20
+experiment 20
+experiment 20
+experiment 20
+experiment 10
+experiment 10
+experiment 10
+experiment 10
+experiment 10
+experiment 5
+experiment 5
+experiment 5
+experiment 5
+experiment 5
+experiment 3
+experiment 3
+experiment 3
+experiment 3
+experiment 3
+experiment 2
+experiment 2
+experiment 2
+experiment 2
+experiment 2
+experiment 1
+experiment 1
+experiment 1
+experiment 1
+experiment 1
